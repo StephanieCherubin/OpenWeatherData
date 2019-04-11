@@ -1,16 +1,16 @@
 import React from 'react';
 import Temperature from './Temperature'
 import Atmosphere from './Atmosphere'
+import WeatherDescription from './WeatherDescription';
 
 function Weather(props) {
     // Take the weather data apart to more easily populate the component
-    const { main, description, icon } = props.weatherData.weather[0]
+    const { icon } = props.weatherData.weather[0]
 
     return (<div>
                 <Temperature weatherData={props.weatherData}/>
                 <Atmosphere weatherData={props.weatherData}/>
-                <div>Title: {main}</div>
-                <div>Desc: {description}</div>
+                <WeatherDescription weatherData={props.weatherData}/>
                 <div>Icon: {icon}</div>
             </div>
       )
