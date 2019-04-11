@@ -21,5 +21,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This is a starter project for the React API project challenge. The goal of this challenge is to use React with a web API.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Make-School-Labs/react-api-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Make-School-Labs/react-api-project/issues"
+  },
+  "homepage": "https://github.com/Make-School-Labs/react-api-project#readme"
 }
