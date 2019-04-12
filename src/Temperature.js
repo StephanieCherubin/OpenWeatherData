@@ -1,4 +1,5 @@
 import React from 'react';
+import './Temperature.css';
 
 function Temperature(props) {
     const { temp, temp_min, temp_max } = props.weatherData.main 

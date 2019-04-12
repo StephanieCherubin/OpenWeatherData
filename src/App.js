@@ -50,7 +50,7 @@ class App extends Component {
       // data, for example when a bad zip code entered.
     }).catch((err) => {
       // If there is no data 
-      this.setState({ weatherData: null }) // Clear the weather data we don't have any to display
+      this.setState({ weatherData: null }) // Clear the weather data we don't have any to display\
       // Print an error to the console. 
       console.log('-- Error fetching --')
       console.log(err.message)
@@ -72,31 +72,38 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
+        <nav>
+          <p>Check the Weather!</p>
+        </nav>
+        <div className="App">
+          {/** This input uses the controlled component pattern */}
+          <label className="label">Enter Zip Code</label>
+          <form className="form" onSubmit={e => this.handleSubmit(e)}>
 
-        {/** This input uses the controlled component pattern */}
-        <form onSubmit={e => this.handleSubmit(e)}>
+            {/** 
+            This pattern is used for input and other form elements 
+            Set the value of the input to a value held in component state
+            Set the value held in component state when a change occurs at the input 
+            */}
+            <input 
+              value={this.state.inputValue} 
+              onChange={e => this.setState({ inputValue: e.target.value })}
+              type="text" 
+              pattern="(\d{5}([\-]\d{4})?)"
+              placeholder="90210"
+            />
 
-          {/** 
-          This pattern is used for input and other form elements 
-          Set the value of the input to a value held in component state
-          Set the value held in component state when a change occurs at the input 
-          */}
-          <input 
-            value={this.state.inputValue} 
-            onChange={e => this.setState({ inputValue: e.target.value })}
-            type="text" 
-            pattern="(\d{5}([\-]\d{4})?)"
-            placeholder="enter zip"
-          />
+            <button type="submit">Enter</button>
 
-          <button type="submit">Enter</button>
+          </form>
 
-        </form>
-
-        {/** Conditionally render this component */}
-        {this.renderWeather()}
-
+          {/** Conditionally render this component */}
+          {this.renderWeather()}
+          <footer>
+            <p>Created by Stephanie Cherubin</p>
+          </footer>
+        </div>
       </div>
     );
   }
