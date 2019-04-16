@@ -33,5 +33,9 @@
   "bugs": {
     "url": "https://github.com/Make-School-Labs/react-api-project/issues"
   },
-  "homepage": "https://github.com/Make-School-Labs/react-api-project#readme"
+  "homepage": "https://github.com/Make-School-Labs/react-api-project#readme",
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-react": "^7.12.4"
+  }
 }
