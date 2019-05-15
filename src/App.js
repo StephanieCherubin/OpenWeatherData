@@ -43,11 +43,11 @@ class App extends Component {
       return res.json();
     }).then((json) => {
       // If the request was successful assign the data to component state
+
       this.setState({ weatherData: json });
-      // console.log(weatherData.main);
       // ! This needs better error checking here or at renderWeather()
-      // It's possible to get a valid JSON response that is not weather
-      // data, for example when a bad zip code entered.
+      // It's possible to get a valid JSON response that is not weather data,
+      // for example when a bad zip code entered.
     }).catch((err) => {
       // If there is no data
       this.setState({ weatherData: null }); // Clear the weather data we don't have any to display
