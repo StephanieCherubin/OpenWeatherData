@@ -1,14 +1,24 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 
-function Atmosphere(props) {
-    const { humidity, pressure } = props.weatherData.main
+function Atmosphere(weatherData) {
+  const { humidity, pressure } = weatherData.main;
 
-    return (
-        <div>
-            <div>Humidity: { humidity } </div>
-            <div>Pressure: { pressure }</div>
-        </div>
-    )
+  return (
+    <div>
+      <div>
+Humidity:
+        {' '}
+        { humidity }
+        {' '}
+      </div>
+      <div>
+Pressure:
+        {' '}
+        { pressure }
+      </div>
+    </div>
+  );
 }
 
-export default Atmosphere
+export default Atmosphere;
