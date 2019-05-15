@@ -27,14 +27,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Make-School-Labs/react-api-project.git"
+    "url": "https://github.com/StephanieCherubin/OpenWeatherData"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Make-School-Labs/react-api-project/issues"
+    "url": "https://github.com/StephanieCherubin/OpenWeatherData"
   },
-  "homepage": "https://github.com/Make-School-Labs/react-api-project#readme",
+  "homepage": "https://github.com/StephanieCherubin/OpenWeatherData/blob/master/README.md",
   "devDependencies": {
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-react": "^7.12.4"
