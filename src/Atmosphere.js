@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 
-function Atmosphere(weatherData) {
+function Atmosphere(props) {
+  const { weatherData } = props;
   const { humidity, pressure } = weatherData.main;
 
   return (

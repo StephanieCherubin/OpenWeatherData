@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable camelcase */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import './Temperature.css';
 
-function Temperature(weatherData) {
-  const { temp, tempMin, tempMax } = weatherData.main;
+function Temperature(props) {
+  const { weatherData } = props;
+  const { temp, temp_min, temp_max } = weatherData.main;
 
   return (
     <div>
@@ -20,11 +23,11 @@ C
       </div>
       <div>
 Temperature Lows:
-        { Math.ceil(9 / 5 * (tempMin - 273) + 32) }
+        { Math.ceil(9 / 5 * (temp_min - 273) + 32) }
         {' '}
 F /
         {' '}
-        {Math.ceil(tempMin - 273.15)}
+        {Math.ceil(temp_min - 273.15)}
         {' '}
 C
         {' '}
@@ -32,11 +35,11 @@ C
       <div>
 Temperature Highs:
         {' '}
-        { Math.ceil(9 / 5 * (tempMax - 273) + 32) }
+        { Math.ceil(9 / 5 * (temp_max - 273) + 32) }
         {' '}
 F /
         {' '}
-        {Math.ceil(tempMax - 273.15)}
+        {Math.ceil(temp_max - 273.15)}
         {' '}
 C
         {' '}

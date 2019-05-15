@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import './WeatherDescription.css';
 
-function WeatherDescription(weatherData) {
+function WeatherDescription(props) {
+  const { weatherData } = props;
   const { main, description } = weatherData.weather[0];
 
   return (

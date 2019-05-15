@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import Temperature from './Temperature';
@@ -5,7 +6,9 @@ import Atmosphere from './Atmosphere';
 import WeatherDescription from './WeatherDescription';
 import './Weather.css';
 
-function Weather(weatherData) {
+function Weather(props) {
+  const { weatherData } = props;
+
   const { icon } = weatherData.weather[0];
 
   return (
