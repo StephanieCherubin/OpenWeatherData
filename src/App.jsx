@@ -42,6 +42,8 @@ class App extends Component {
     }).then((json) => {
       // If the request was successful assign the data to component state
 
+      console.log(json)
+
       this.setState({ weatherData: json });
       // ! This needs better error checking here or at renderWeather()
       // It's possible to get a valid JSON response that is not weather data,
@@ -50,6 +52,7 @@ class App extends Component {
       // If there is no data
       this.setState({ weatherData: null }); // Clear the weather data we don't have any to display
       console.log(`-- Error fetching --${err.message}`);
+      // this.setState({ code,  500 , message: err.message })
     });
   }
 
@@ -61,9 +64,9 @@ class App extends Component {
       return undefined;
     }
 
-    if (weatherData.cod === '404' || weatherData.cod === '400') {
-      return <ErrorMessage message={weatherData.message} />;
-    }
+    // if (weatherData.cod === '404' || weatherData.cod === '400') {
+    //   return <ErrorMessage message={weatherData.message} />;
+    // }
     /*
     This next step needs another level of error checking. It's
     possible to get a JSON response for an invalid zip in which

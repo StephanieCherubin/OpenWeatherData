@@ -1,3 +1,23 @@
+# Weather App Challenges 
+
+## TODOS
+
+1. Temp Large
+2. Submit button same height as input 
+3. Add degree symbol
+4. Error Checking 
+  - Check for bad input (example submit on empty input, COD: 400)
+  - Check for bad zip code (example enter 99999) COD: 404
+  - COD 200 everything okay no error
+5. Animation
+
+psuedo code
+if (json.code === 200) {
+  <Weather /> Render the weather
+} else {
+  <Error message={json.message} />
+}
+
 # React API Challenge 
 
 This is a starter project for the React API project challenge. The goal of this challenge is to use React with a web API. 
