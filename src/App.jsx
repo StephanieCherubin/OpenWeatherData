@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Weather from './Weather';
-import ErrorMessage from './ErrorMessage';
+// import ErrorMessage from './ErrorMessage';
 import './App.css';
 
 /**
@@ -42,7 +42,7 @@ class App extends Component {
     }).then((json) => {
       // If the request was successful assign the data to component state
 
-      console.log(json)
+      console.log(json);
 
       this.setState({ weatherData: json });
       // ! This needs better error checking here or at renderWeather()
