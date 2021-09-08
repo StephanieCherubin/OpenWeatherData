@@ -86,12 +86,6 @@ class App extends Component {
           {/** This input uses the controlled component pattern */}
 
           <form className="form" onSubmit={e => this.handleSubmit(e)}>
-
-            {/**
-            This pattern is used for input and other form elements
-            Set the value of the input to a value held in component state
-            Set the value held in component state when a change occurs at the input
-            */}
             <label htmlFor="zip" className="label">
             Enter Zip Code
               <br />
