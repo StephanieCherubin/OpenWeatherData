@@ -5,6 +5,7 @@
   "dependencies": {
     "browserslist": "^4.17.0",
     "glob-parent": "^6.0.1",
+    "mem": "^9.0.1",
     "postcss": "^8.2.10",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
