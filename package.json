@@ -3,14 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ansi-html": "^0.0.7",
+    "braces": "^3.0.2",
     "browserslist": "^4.17.0",
+    "color-string": "^1.6.0",
     "glob-parent": "^6.0.1",
+    "is-svg": "^4.3.1",
+    "js-yaml": "^4.1.0",
     "mem": "^9.0.1",
+    "merge": "^2.1.1",
+    "notifier": "^0.2.0",
     "postcss": "^8.2.10",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^1.1.5"
+    "react-scripts": "^1.1.5",
+    "sockjs": "^0.3.21",
+    "trim-newlines": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
